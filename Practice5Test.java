@@ -33,9 +33,11 @@ public class Practice5Test {
 		if (tree.find("copy")) {
 			tree.delete("copy");
 			if (tree.find("copy")) {
+				
 				// Empty the tree before returning...
 				tree.delete("copy2");
 				tree.delete("copy");
+				tree.print();
 				return true;
 			}
 		}
